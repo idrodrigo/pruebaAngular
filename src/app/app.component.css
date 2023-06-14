@@ -1,0 +1,59 @@
+.home a {
+
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    /* Ajusta la altura deseada del enlace */
+    position: relative;
+    overflow: hidden;
+}
+
+.home a img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navLink {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navLink a {
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    border-bottom: 5px solid #ccc;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: skyblue;
+    color: white;
+    font-weight: 600;
+}
+
+.navLink a:hover {
+    border-bottom: 2px solid #ccc;
+}
+
+nav .home {
+    flex-grow: 1;
+}

@@ -1,0 +1,15 @@
+<main>
+    <form action="">
+    <h2>Pokémon</h2>
+    
+    <select [(ngModel)]="selectedPokemon" (change)="onChangePokemon()" name="pokemonSelect">
+      <option *ngFor="let pokemon of pokemons" [value]="pokemon.name">{{ pokemon.name }}</option>
+    </select>
+    
+    
+    </form>
+    <div class="sprite">
+    <img *ngIf="pokemonImageUrl" [src]="pokemonImageUrl" [alt]="selectedPokemon" >
+    </div>
+    </main>
+    
